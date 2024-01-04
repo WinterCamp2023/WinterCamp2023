@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting to Amazon UK Photos</title>
+  <script>
+    function redirectToAmazon() {
+      window.location.replace("https://www.amazon.co.uk/photos/share/TOp4qtERHYzPcnqk7QFPKomx4Yqx7M3RXdjYufN3mfB");
+    }
+
+    function launchFullscreen(element) {
+      if (element.requestFullscreen) {
+        element.requestFullscreen();
+      } else if (element.mozRequestFullScreen) {
+        element.mozRequestFullScreen();
+      } else if (element.webkitRequestFullscreen) {
+        element.webkitRequestFullscreen();
+      } else if (element.msRequestFullscreen) {
+        element.msRequestFullscreen();
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      redirectToAmazon();
+      launchFullscreen(document.documentElement);
+    });
+  </script>
+</head>
+<body>
+  <!-- You will be redirected automatically. -->
+</body>
+</html>

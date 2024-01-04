@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirect to iCloud Album</title>
+</head>
+<body>
+
+<script>
+  // Function to redirect to iCloud URL
+  function redirectToICloud() {
+    // URL to redirect to
+    var iCloudURL = 'https://www.icloud.com/sharedalbum/#B0a532ODWBmTqy';
+
+    // Redirect to iCloud URL
+    window.location.href = iCloudURL;
+  }
+
+  // Function to request fullscreen
+  function requestFullScreen() {
+    var element = document.documentElement;
+    if (element.requestFullscreen) {
+      element.requestFullscreen();
+    } else if (element.mozRequestFullScreen) {
+      element.mozRequestFullScreen();
+    } else if (element.webkitRequestFullscreen) {
+      element.webkitRequestFullscreen();
+    } else if (element.msRequestFullscreen) {
+      element.msRequestFullscreen();
+    }
+  }
+
+  // Redirect to iCloud URL and enter fullscreen after a delay (in milliseconds)
+  setTimeout(function() {
+    redirectToICloud();
+    requestFullScreen();
+  }, 1); // Change the delay time as needed
+</script>
+
+</body>
+</html>
