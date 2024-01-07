@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Camp Photos</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                min-height: 100vh;
+                background-color: #f4f4f4;
+                font-family: Arial, sans-serif;
+            }
+            .header {
+                margin-top: 20px;
+                text-align: center;
+            }
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 10px;
+                max-width: 80%;
+                margin-top: 20px;
+            }
+            .photo {
+                position: relative;
+                overflow: hidden;
+                border-radius: 8px;
+            }
+            .photo img {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+                transition: transform 0.3s ease;
+            }
+            .photo:hover img {
+                transform: scale(0.95);
+            }
+            .footer {
+                text-align: center;
+                background-color: #ddd;
+                padding: 10px 0;
+                width: 100%;
+            }
+            .buttons {
+                margin-top: 20px;
+            }
+            .button {
+                padding: 10px 20px;
+                margin: 0 10px;
+                text-decoration: none;
+                color: #fff;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+            }
+            .button:nth-child(1) {
+                background-color: #ff9900;
+            }
+            .button:nth-child(2) {
+                background-color: #3498db;
+            }
+            .button:hover {
+                background-color: #555;
+            }
+            .media {
+                width: 100%;
+                border-radius: 8px;
+                overflow: hidden;
+                position: relative;
+                margin-bottom: 10px;
+            }
+            .media video {
+                width: 100%;
+                height: 100%;
+            }
+            .media:hover video {
+                transform: scale(0.95);
+            }
+            .media video {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+                transition: transform 0.3s ease;
+            }
+            h4 {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Go-Karting</h1>
+        </div>
+        <h4>Click on a picture or video to download</h4>
+
+        <div class="gallery">
+            <div class="photo">
+                <a
+                    href="media/Go-Karting/IMG_8941.JPG"
+                    download="media/Go-Karting/IMG_8941.JPG"
+                >
+                    <img
+                        src="media/Go-Karting/IMG_8941.JPG"
+                        alt="pic not loaded"
+                /></a>
+            </div>
+
+            <div class="photo">
+                <a
+                    href="media/Go-Karting/IMG_8987.JPG"
+                    download="media/Go-Karting/IMG_8987.JPG"
+                >
+                    <img
+                        src="media/Go-Karting/IMG_8987.JPG"
+                        alt="pic not loaded"
+                /></a>
+            </div>
+
+            <div class="photo">
+                <a
+                    href="media/Go-Karting/IMG_8988.JPG"
+                    download="media/Go-Karting/IMG_8988.JPG"
+                >
+                    <img
+                        src="media/Go-Karting/IMG_8988.JPG"
+                        alt="pic not loaded"
+                /></a>
+            </div>
+
+            <div class="photo">
+                <a
+                    href="media/Go-Karting/IMG_8989.JPG"
+                    download="media/Go-Karting/IMG_8989.JPG"
+                >
+                    <img
+                        src="media/Go-Karting/IMG_8989.JPG"
+                        alt="pic not loaded"
+                /></a>
+            </div>
+
+            <div class="photo">
+                <a
+                    href="media/Go-Karting/IMG_8990.JPG"
+                    download="media/Go-Karting/IMG_8990.JPG"
+                >
+                    <img
+                        src="media/Go-Karting/IMG_8990.JPG"
+                        alt="pic not loaded"
+                /></a>
+            </div>
+
+            <div class="photo">
+                <a
+                    href="media/Go-Karting/IMG_8991.JPG"
+                    download="media/Go-Karting/IMG_8991.JPG"
+                >
+                    <img
+                        src="media/Go-Karting/IMG_8991.JPG"
+                        alt="pic not loaded"
+                /></a>
+            </div>
+
+            <div class="photo">
+                <a
+                    href="media/Go-Karting/IMG_8992.JPG"
+                    download="media/Go-Karting/IMG_8992.JPG"
+                >
+                    <img
+                        src="media/Go-Karting/IMG_8992.JPG"
+                        alt="pic not loaded"
+                /></a>
+            </div>
+
+            <div class="photo">
+                <a
+                    href="media/Go-Karting/IMG_8993.JPG"
+                    download="media/Go-Karting/IMG_8993.JPG"
+                >
+                    <img
+                        src="media/Go-Karting/IMG_8993.JPG"
+                        alt="pic not loaded"
+                /></a>
+            </div>
+
+            <div class="photo">
+                <a
+                    href="media/Go-Karting/IMG_8997.JPG"
+                    download="media/Go-Karting/IMG_8997.JPG"
+                >
+                    <img
+                        src="media/Go-Karting/IMG_8997.JPG"
+                        alt="pic not loaded"
+                /></a>
+            </div>
+
+            <div class="photo">
+                <a
+                    href="media/Go-Karting/IMG_8998.JPG"
+                    download="media/Go-Karting/IMG_8998.JPG"
+                >
+                    <img
+                        src="media/Go-Karting/IMG_8998.JPG"
+                        alt="pic not loaded"
+                /></a>
+            </div>
+
+            <div class="photo">
+                <a
+                    href="media/Go-Karting/IMG_8999.JPG"
+                    download="media/Go-Karting/IMG_8999.JPG"
+                >
+                    <img
+                        src="media/Go-Karting/IMG_8999.JPG"
+                        alt="pic not loaded"
+                /></a>
+            </div>
+
+            <div class="photo">
+                <a
+                    href="media/Go-Karting/IMG_9002.JPG"
+                    download="media/Go-Karting/IMG_9002.JPG"
+                >
+                    <img
+                        src="media/Go-Karting/IMG_9002.JPG"
+                        alt="pic not loaded"
+                /></a>
+            </div>
+
+            <div class="photo">
+                <a
+                    href="media/Go-Karting/IMG_9003.JPG"
+                    download="media/Go-Karting/IMG_9003.JPG"
+                >
+                    <img
+                        src="media/Go-Karting/IMG_9003.JPG"
+                        alt="pic not loaded"
+                /></a>
+            </div>
+
+            <div class="photo">
+                <a
+                    href="media/Go-Karting/IMG_8942.JPG"
+                    download="media/Go-Karting/IMG_8942.JPG"
+                >
+                    <img
+                        src="media/Go-Karting/IMG_8942.JPG"
+                        alt="pic not loaded"
+                /></a>
+            </div>
+
+            <div class="photo">
+                <a
+                    href="media/Go-Karting/IMG_8943.JPG"
+                    download="media/Go-Karting/IMG_8943.JPG"
+                >
+                    <img
+                        src="media/Go-Karting/IMG_8943.JPG"
+                        alt="pic not loaded"
+                /></a>
+            </div>
+
+            <div class="photo">
+                <a
+                    href="media/Go-Karting/IMG_8947.JPG"
+                    download="media/Go-Karting/IMG_8947.JPG"
+                >
+                    <img
+                        src="media/Go-Karting/IMG_8947.JPG"
+                        alt="pic not loaded"
+                /></a>
+            </div>
+
+            <div class="photo">
+                <a
+                    href="media/Go-Karting/IMG_8948.JPG"
+                    download="media/Go-Karting/IMG_8948.JPG"
+                >
+                    <img
+                        src="media/Go-Karting/IMG_8948.JPG"
+                        alt="pic not loaded"
+                /></a>
+            </div>
+
+            <div class="photo">
+                <a
+                    href="media/Go-Karting/IMG_8949.JPG"
+                    download="media/Go-Karting/IMG_8949.JPG"
+                >
+                    <img
+                        src="media/Go-Karting/IMG_8949.JPG"
+                        alt="pic not loaded"
+                /></a>
+            </div>
+
+            <div class="photo">
+                <a
+                    href="media/Go-Karting/IMG_8950.JPG"
+                    download="media/Go-Karting/IMG_8950.JPG"
+                >
+                    <img
+                        src="media/Go-Karting/IMG_8950.JPG"
+                        alt="pic not loaded"
+                /></a>
+            </div>
+
+            <div class="photo">
+                <a
+                    href="media/Go-Karting/IMG_8957.JPG"
+                    download="media/Go-Karting/IMG_8957.JPG"
+                >
+                    <img
+                        src="media/Go-Karting/IMG_8957.JPG"
+                        alt="pic not loaded"
+                /></a>
+            </div>
+
+            <div class="photo">
+                <a
+                    href="media/Go-Karting/IMG_8970.JPG"
+                    download="media/Go-Karting/IMG_8970.JPG"
+                >
+                    <img
+                        src="media/Go-Karting/IMG_8970.JPG"
+                        alt="pic not loaded"
+                /></a>
+            </div>
+
+            <div class="photo">
+                <a
+                    href="media/Go-Karting/IMG_8975.JPG"
+                    download="media/Go-Karting/IMG_8975.JPG"
+                >
+                    <img
+                        src="media/Go-Karting/IMG_8975.JPG"
+                        alt="pic not loaded"
+                /></a>
+            </div>
+
+            <div class="photo">
+                <a
+                    href="media/Go-Karting/IMG_8976.JPG"
+                    download="media/Go-Karting/IMG_8976.JPG"
+                >
+                    <img
+                        src="media/Go-Karting/IMG_8976.JPG"
+                        alt="pic not loaded"
+                /></a>
+            </div>
+
+            <div class="photo">
+                <a
+                    href="media/Go-Karting/IMG_8981.JPG"
+                    download="media/Go-Karting/IMG_8981.JPG"
+                >
+                    <img
+                        src="media/Go-Karting/IMG_8981.JPG"
+                        alt="pic not loaded"
+                /></a>
+            </div>
+
+            <div class="photo">
+                <a
+                    href="media/Go-Karting/IMG_8982.JPG"
+                    download="media/Go-Karting/IMG_8982.JPG"
+                >
+                    <img
+                        src="media/Go-Karting/IMG_8982.JPG"
+                        alt="pic not loaded"
+                /></a>
+            </div>
+
+            <div class="photo">
+                <a
+                    href="media/Go-Karting/IMG_8984.JPG"
+                    download="media/Go-Karting/IMG_8984.JPG"
+                >
+                    <img
+                        src="media/Go-Karting/IMG_8984.JPG"
+                        alt="pic not loaded"
+                /></a>
+            </div>
+
+            <div class="photo">
+                <a
+                    href="media/Go-Karting/IMG_8985.JPG"
+                    download="media/Go-Karting/IMG_8985.JPG"
+                >
+                    <img
+                        src="media/Go-Karting/IMG_8985.JPG"
+                        alt="pic not loaded"
+                /></a>
+            </div>
+
+            <div class="photo">
+                <a
+                    href="media/Go-Karting/IMG_8986.JPG"
+                    download="media/Go-Karting/IMG_8986.JPG"
+                >
+                    <img
+                        src="media/Go-Karting/IMG_8986.JPG"
+                        alt="pic not loaded"
+                /></a>
+            </div>
+        </div>
+        <div class="footer">
+            <p>
+                <a
+                    href="https://copyrightservice.co.uk/copyright/p03_copyright_notices"
+                    >© Alex Katz 2023/2024</a
+                >
+            </p>
+            <p>terms and conditions can be found <a href="t&c.html">here</a></p>
+        </div>
+    </body>
+</html>
