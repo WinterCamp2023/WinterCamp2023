@@ -22,7 +22,7 @@
             }
             .gallery {
                 display: grid;
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(4, 1fr);
                 gap: 10px;
                 max-width: 80%;
                 margin-top: 20px;
@@ -39,7 +39,7 @@
                 transition: transform 0.3s ease;
             }
             .photo:hover img {
-                transform: scale(0.98);
+                transform: scale(0.95);
             }
             .footer {
                 text-align: center;
@@ -79,7 +79,7 @@
                 height: 100%;
             }
             .media:hover video {
-                transform: scale(0.98);
+                transform: scale(0.95);
             }
             .media video {
                 width: 100%;
@@ -102,37 +102,37 @@
 
         <div class="gallery">
             <div class="photo">
-                <a href="main.JPG" download="main.JPG">
-                    <img src="main.JPG" alt="Kumzitz"
+                <a href="media/main.JPG" download="media/main.JPG">
+                    <img src="media/main.JPG" alt="Kumzitz"
                 /></a>
             </div>
             <div class="photo">
-                <a href="main1.JPG" download="main1.JPG">
-                    <img src="main1.JPG" alt="Football"
+                <a href="media/main1.JPG" download="media/main1.JPG">
+                    <img src="media/main1.JPG" alt="Football"
                 /></a>
             </div>
             <div class="photo">
-                <a href="main2.JPG" download="main2.JPG">
-                    <img src="main2.JPG" alt="Go Karting"
+                <a href="media/main2.JPG" download="media/main2.JPG">
+                    <img src="media/main2.JPG" alt="Go Karting"
                 /></a>
             </div>
             <div class="photo">
-                <a href="main3.JPG" download="main3.JPG">
-                    <img src="main3.JPG" alt="Bowling"
+                <a href="media/main3.JPG" download="media/main3.JPG">
+                    <img src="media/main3.JPG" alt="Bowling"
                 /></a>
             </div>
             <div class="media">
-                <a href="video1.mp4" download="video1.mp4">
+                <a href="media/video1.mp4" download="media/video1.mp4">
                     <video controls>
-                        <source src="video1.mp4" type="video/mp4" />
+                        <source src="media/video1.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                 </a>
             </div>
             <div class="media">
-                <a href="video2.mp4" download="video2.mp4">
+                <a href="media/video2.mp4" download="media/video2.mp4">
                     <video controls>
-                        <source src="video2.mp4" type="video/mp4" />
+                        <source src="media/video2.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                 </a>
@@ -171,6 +171,11 @@
                     </video>
                 </a>
             </div>
+            <div class="photo">
+                <a href="media/IMG_8134.JPG" download="media/IMG_8134.JPG">
+                    <img src="media/IMG_8134.JPG" alt="Bowling"
+                /></a>
+            </div>
         </div>
 
         <br />
@@ -178,7 +183,12 @@
         <br />
         <br />
         <div class="footer">
-            <p>© Alex Katz 2023</p>
+            <p>
+                <a
+                    href="https://copyrightservice.co.uk/copyright/p03_copyright_notices"
+                    >© Alex Katz 2023/2024</a
+                >
+            </p>
             <p>terms and conditions can be found <a href="t&c.html">here</a></p>
         </div>
     </body>
